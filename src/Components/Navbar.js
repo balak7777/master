@@ -8,7 +8,7 @@ import {
 const NavBar = () => {
     return(
         <div className="App" sticky="top">
-    <ReactBootStrap.Navbar collapseOnSelect expand="xl"  variant="dark" fixed="top" position="relative" style={{height: "60px", background : "#e39954", 'font-weight': 'bold','font-family': 'auto'}}>
+    <ReactBootStrap.Navbar collapseOnSelect expand="xl"  variant="dark" fixed="top" position="relative" style={{ background : "#f2844e", 'font-weight': 'bold','font-family': 'auto'}}>
   <ReactBootStrap.Navbar.Brand href="#home">World Corona Graph</ReactBootStrap.Navbar.Brand>
   <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
