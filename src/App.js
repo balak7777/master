@@ -1,11 +1,14 @@
 import React from 'react';
 import './App.css';
 import * as ReactBootStrap from "react-bootstrap";
-import DankMemes from "./Components/DankMemes";
+
 import MyGraphComponent from "./Components/MyGraphComponent";
 import WorldData from "./Components/WorldData";
-import MoreDeets from "./Components/MoreDeets";
-import NavBar from "./Components/Navbar"
+
+import NavBar from "./Components/Navbar";
+import StateWiseData from './Components/StateWiseData';
+import DistrictWiseData from './Components/DistrictWiseData';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,30 +17,36 @@ import {
 } from "react-router-dom";
 
 
+
 function App() {
+  
   return (
     <div className="App">
-        <Router>
+      <Router>
         <NavBar />
- 
+        <div style={{height: "60px"}}> 
+
+        </div>
+
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/mygraphcomponent" component={MyGraphComponent}>
-              <MyGraphComponent/>
-          </Route>
+          
           <Route path="/worlddata" component={WorldData}>
             <WorldData />
           </Route>
-          <Route path="/deets" component={MoreDeets}>
-            <MoreDeets />
+          <Route path="/statewisedata" component={StateWiseData}>
+            <StateWiseData />
           </Route>
-          <Route path="/dankmemes" component={DankMemes}>
-            <DankMemes />
+          <Route path="/districtwisedata" component={DistrictWiseData}>
+            <DistrictWiseData />
+          </Route>
+          <Route path="/" component={MyGraphComponent}>
+            <MyGraphComponent />
           </Route>
         </Switch>
-    </Router>
+      </Router>
     </div>
   );
 }

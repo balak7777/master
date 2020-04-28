@@ -7,17 +7,24 @@ import {
 
 const NavBar = () => {
     return(
-        <div className="App">
-    <ReactBootStrap.Navbar collapseOnSelect expand="xl" bg="warning" variant="dark">
+        <div className="App" sticky="top">
+    <ReactBootStrap.Navbar collapseOnSelect expand="xl" bg="warning" variant="dark" fixed="top" position="relative">
   <ReactBootStrap.Navbar.Brand href="#home">World Corona Graph</ReactBootStrap.Navbar.Brand>
   <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
     <ReactBootStrap.Nav className="mr-auto"> 
+    
     <Link to="/mygraphcomponent">
     <ReactBootStrap.Nav.Link href="#mygraphcomponent">World Graph</ReactBootStrap.Nav.Link>
     </Link>
     <Link to="/worlddata">
     <ReactBootStrap.Nav.Link href="#worlddata">World Cases</ReactBootStrap.Nav.Link>
+    </Link>
+    <Link to="/statewisedata">
+    <ReactBootStrap.Nav.Link href="#statewisedata">State wise</ReactBootStrap.Nav.Link>
+    </Link>
+    <Link to="/districtwisedata">
+    <ReactBootStrap.Nav.Link href="#districtwisedata">District wise</ReactBootStrap.Nav.Link>
     </Link>
       {/* <ReactBootStrap.NavDropdown title="YEET" id="collasible-nav-dropdown">
         <ReactBootStrap.NavDropdown.Item href="#action/3.1">Action</ReactBootStrap.NavDropdown.Item>
