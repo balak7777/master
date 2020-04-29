@@ -45,7 +45,7 @@ class MyGraphComponent extends React.Component {
 
       return (
          <div>
-            <div style={{  width: '100%', background: '#48e988', padding : '7px', marginTop: '-10px', fontWeight: '400', textAlign: 'left'}}>
+            <div style={{  width: '100%', background: '#48e988', padding : '7px', marginTop: '-10px', fontWeight: '400', textAlign: 'left', backgroundImage: 'linear-gradient(180deg, #48e988, #09a547)'}}>
             <div className="container">
                <div style={{padding: '5px'}}className="row">
                   <div className="col-md-4">Select Country</div>
@@ -140,13 +140,15 @@ class MyGraphComponent extends React.Component {
                showAlternateHGridColor: 0,
                valueAlpha: 50,
                crossLineAlpha: 0,
+               legendPosition: "bottom",
                "showAlternateVGridColor": "0",
                "divLineAlpha": 100,
                "legendItemFontBold": 0,
                "legendBgAlpha": 0,
                "legendBorderAlpha": 0,
                "drawCustomLegendIcon": 1,
-               "legendIconSides": 0,
+               "legendIconSides": 6,
+               alignLegendWithCanvas: 1,
                "legendIconBorderThickness": 3,
                numberScaleUnit: "K, L, Cr",
                numberScaleValue: "1000,100,100"

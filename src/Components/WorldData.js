@@ -32,7 +32,7 @@ class WorldData extends React.Component {
             
             <Table striped bordered responsive borderless>
                <tbody>
-               <tr style={{ fontWeight: "500" }}>
+               <tr style={{ fontWeight: "500",background: '#6f6df4', color: 'white' }}>
                <td>Country</td>
                <td>Confirmed</td>
                <td>Recovered</td>

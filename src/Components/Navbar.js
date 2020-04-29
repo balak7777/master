@@ -7,10 +7,10 @@ import {
 
 const NavBar = () => {
     return(
-        <div className="App" sticky="top">
-    <ReactBootStrap.Navbar collapseOnSelect expand="xl"  variant="dark" fixed="top" position="relative" style={{ background : "#e8a558", 'font-weight': 'bold','font-family': 'auto'}}>
+        <div id="header" style={{height:'-5px'}}className="App" sticky="top">
+    <ReactBootStrap.Navbar collapseOnSelect expand="xl"  variant="dark" fixed="top" position="relative" style={{ background : "#e8a558", 'fontWeight': 'bold','font-family': 'auto', backgroundImage: 'linear-gradient(180deg, #e8a558, #e68a22)'}}>
   <ReactBootStrap.Navbar.Brand href="#home">World Corona Graph</ReactBootStrap.Navbar.Brand>
-  <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  <ReactBootStrap.Navbar.Toggle style={{border:'1px solid white'}} aria-controls="responsive-navbar-nav" />
   <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
     <ReactBootStrap.Nav className="mr-auto"> 
     

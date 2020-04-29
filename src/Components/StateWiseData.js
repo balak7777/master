@@ -34,9 +34,9 @@ class StateWiseData extends React.Component {
          
          <div>
             
-            <Table striped bordered responsive borderless trClassName="customClass">
+            <Table striped bordered responsive borderless >
                <tbody>
-               <tr style={{fontWeight : "500"}} fixed="top" position="relative">
+               <tr style={{ fontWeight: "500" ,background: '#6f6df4', color:'white'}} fixed="top" position="relative">
                <td>States</td>
                <td>Confirmed</td>
                <td>Recovered</td>
