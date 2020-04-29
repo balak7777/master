@@ -182,7 +182,7 @@ class DistrictWiseData extends React.Component {
       return (
          <div>
 
-            <div style={{ position: 'fixed', width: '100%', background: '#48e988', padding: '7px', marginTop: '-10px', fontWeight: '400', backgroundImage: 'linear-gradient(180deg, #48e988, #09a547)' }}>
+            <div style={{ position: 'fixed', width: '100%', background: '#48e988', padding: '7px', marginTop: '-10px', fontWeight: '400',backgroundImage: 'linear-gradient(180deg, #48e988, #17ce60)'  }}>
                <div className="container">
                   <div style={{ textAlign: 'left', padding: '5px' }} className="row">
                      <div className="col-md-4">Select State</div>

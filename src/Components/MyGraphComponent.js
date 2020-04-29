@@ -45,7 +45,7 @@ class MyGraphComponent extends React.Component {
 
       return (
          <div>
-            <div style={{  width: '100%', background: '#48e988', padding : '7px', marginTop: '-10px', fontWeight: '400', textAlign: 'left', backgroundImage: 'linear-gradient(180deg, #48e988, #09a547)'}}>
+            <div style={{  width: '100%', background: '#48e988', padding : '7px', marginTop: '-10px', fontWeight: '400', textAlign: 'left', backgroundImage: 'linear-gradient(180deg, #48e988, #17ce60)'}}>
             <div className="container">
                <div style={{padding: '5px'}}className="row">
                   <div className="col-md-4">Select Country</div>
