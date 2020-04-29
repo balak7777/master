@@ -6,6 +6,7 @@ import axios from 'axios';
 import Select from 'react-select';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Navbar, Nav, NavItem, NavDropdown, MenuItem, Table, Row, Col, Container } from 'react-bootstrap';
+import { StickyContainer, Sticky } from 'react-sticky';
 
 const states = [
    {
@@ -180,31 +181,41 @@ class DistrictWiseData extends React.Component {
       };
       return (
          <div>
-            <div className="container">
-               <div className="row">
-                  <div className="col-md-4">Select State</div>
-               </div>
-            </div>
-            <div className="container">
-               <div className="row">
-                  <div className="col-md-4"></div>
-                  <div className="col-md-4">
-                     <Select readOnly onChange={this.handleChange} options={states} />
+
+            <div style={{ position: 'fixed', width: '100%', background: '#48e988', padding: '7px', marginTop: '-10px', fontWeight: '400' }}>
+               <div className="container">
+                  <div style={{ textAlign: 'left', padding: '5px' }} className="row">
+                     <div className="col-md-4">Select State</div>
                   </div>
-                  <div className="col-md-4"></div>
                </div>
+               <div className="container">
+                  <div style={{ textAlign: 'left', paddingBottom: '8px' }} className="row ">
+                     <div className="col-md-4"></div>
+                     <div className="col-md-4">
+                        <Select readOnly onChange={this.handleChange} options={states} />
+                     </div>
+                     <div className="col-md-4"></div>
+                  </div>
+               </div>
+
             </div>
-            <Table striped bordered responsive borderless>
-               <tbody>
-                  <tr className="tableHeadStyle">
-                     <td>Disticts</td>
-                     <td>Confirmed</td>
-                     <td>Recovered</td>
-                     <td>Deaths</td>
-                  </tr>
-                  {this.renderTableData()}
-               </tbody>
-            </Table>
+            {/* <StickyContainer>
+               <Sticky bottomOffset={80}>{({ style }) => <h1 style={style}>Sticky element</h1>}</Sticky>
+            </StickyContainer> */}
+            <div>
+               <Table style={{ marginTop: "100px" }} striped bordered responsive borderless>
+                  <tbody>
+                     <tr style={{ fontWeight: "500" }}>
+                        <td>Disticts</td>
+                        <td>Confirmed</td>
+                        <td>Recovered</td>
+                        <td>Deaths</td>
+                     </tr>
+                     {this.renderTableData()}
+                  </tbody>
+               </Table>
+            </div>
+
          </div>
       )
    }
@@ -217,14 +228,14 @@ class DistrictWiseData extends React.Component {
 
    renderTableData() {
       return this.state.data.map((data, index) => {
-         
+
          const { district, confirmed, recovered, deceased, delta } = data //destructuring
          return (
             <tr key={district}>
-               <td>{district}</td>
-               <td>{confirmed}({delta.confirmed})</td>
-               <td>{recovered}({delta.recovered})</td>
-               <td>{deceased}({delta.deceased})</td>
+               <td style={{ fontSize: "12px" }}>{district}</td>
+               <td style={{ fontSize: "12px" }}>{confirmed}({delta.confirmed})</td>
+               <td style={{ fontSize: "12px" }}>{recovered}({delta.recovered})</td>
+               <td style={{ fontSize: "12px" }}>{deceased}({delta.deceased})</td>
             </tr>
          )
       })

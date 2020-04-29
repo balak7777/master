@@ -45,9 +45,9 @@ class MyGraphComponent extends React.Component {
 
       return (
          <div>
-            
+            <div style={{  width: '100%', background: '#48e988', padding : '7px', marginTop: '-10px', fontWeight: '400', textAlign: 'left'}}>
             <div className="container">
-               <div className="row">
+               <div style={{padding: '5px'}}className="row">
                   <div className="col-md-4">Select Country</div>
                </div>
             </div>
@@ -60,7 +60,8 @@ class MyGraphComponent extends React.Component {
                   <div className="col-md-4"></div>
                </div>
             </div>
-            <ReactFusioncharts
+            </div>
+            <ReactFusioncharts style={{ marginTop: "100px"}}
                type="msline"
                width="100%"
                // height="100%"
@@ -69,7 +70,7 @@ class MyGraphComponent extends React.Component {
             />
             <Table striped bordered hover>
                <tbody>
-                  <tr>
+                  <tr style={{ fontWeight: "500" }}>
                      <td>Confirmed</td>
                      <td>Active</td>
                      <td>Recovered</td>
@@ -135,7 +136,10 @@ class MyGraphComponent extends React.Component {
                "canvasBorderAlpha": 0,
                "lineThickness": "1",
                "valueFontColor": "#000000",
-               "valueFontSize": 10,
+               "valueFontSize": 7,
+               showAlternateHGridColor: 0,
+               valueAlpha: 50,
+               crossLineAlpha: 0,
                "showAlternateVGridColor": "0",
                "divLineAlpha": 100,
                "legendItemFontBold": 0,

@@ -27,12 +27,16 @@ class StateWiseData extends React.Component {
       const tableHeadStyle = {
          background: '#b2db70 !important'
       };
+      const customClass = {
+         padding: "3px"
+      }
       return (
+         
          <div>
             
-            <Table striped bordered responsive borderless>
+            <Table striped bordered responsive borderless trClassName="customClass">
                <tbody>
-               <tr fixed="top" position="relative">
+               <tr style={{fontWeight : "500"}} fixed="top" position="relative">
                <td>States</td>
                <td>Confirmed</td>
                <td>Recovered</td>
@@ -50,10 +54,10 @@ class StateWiseData extends React.Component {
          const { state, confirmed, recovered, deaths, deltaconfirmed, deltarecovered, deltadeaths} = data //destructuring
          return (
             <tr key={state}>
-               <td>{state}</td>
-               <td>{confirmed}({deltaconfirmed})</td>
-               <td>{recovered}({deltarecovered})</td>
-               <td>{deaths}({deltadeaths})</td>
+               <td style={{fontSize: "12px"}}>{state}</td>
+               <td style={{fontSize: "12px"}}>{confirmed}({deltaconfirmed})</td>
+               <td style={{fontSize: "12px"}}>{recovered}({deltarecovered})</td>
+               <td style={{fontSize: "12px"}}>{deaths}({deltadeaths})</td>
                
             </tr>
          )

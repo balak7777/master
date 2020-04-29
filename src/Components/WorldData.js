@@ -32,7 +32,7 @@ class WorldData extends React.Component {
             
             <Table striped bordered responsive borderless>
                <tbody>
-               <tr className="tableHeadStyle">
+               <tr style={{ fontWeight: "500" }}>
                <td>Country</td>
                <td>Confirmed</td>
                <td>Recovered</td>
@@ -50,10 +50,10 @@ class WorldData extends React.Component {
          const { Country, TotalConfirmed, NewConfirmed, TotalRecovered, NewRecovered, TotalDeaths, NewDeaths } = data //destructuring
          return (
             <tr key={Country}>
-               <td>{Country}</td>
-               <td>{TotalConfirmed}({NewConfirmed})</td>
-               <td>{TotalRecovered}({NewRecovered})</td>
-               <td>{TotalDeaths}({NewDeaths})</td>
+               <td style={{fontSize: "12px"}}>{Country}</td>
+               <td style={{fontSize: "12px"}}>{TotalConfirmed}({NewConfirmed})</td>
+               <td style={{fontSize: "12px"}}>{TotalRecovered}({NewRecovered})</td>
+               <td style={{fontSize: "12px"}}>{TotalDeaths}({NewDeaths})</td>
                
             </tr>
          )
