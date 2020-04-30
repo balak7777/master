@@ -32,7 +32,7 @@ class StateWiseData extends React.Component {
       }
       return (
          
-         <div>
+         <div style={{marginTop: '-5px'}}>
             
             <Table striped bordered responsive borderless >
                <tbody>

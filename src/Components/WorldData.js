@@ -28,7 +28,7 @@ class WorldData extends React.Component {
          background: '#b2db70 !important'
       };
       return (
-         <div>
+         <div style={{marginTop: '-5px'}}>
             
             <Table striped bordered responsive borderless>
                <tbody>

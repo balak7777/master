@@ -182,7 +182,7 @@ class DistrictWiseData extends React.Component {
       return (
          <div>
 
-            <div style={{ position: 'fixed', width: '100%', background: '#48e988', padding: '7px', marginTop: '-10px', fontWeight: '400',backgroundImage: 'linear-gradient(180deg, #48e988, #17ce60)'  }}>
+            <div style={{ position: 'fixed', width: '100%',  padding: '7px', marginTop: '-10px', fontWeight: '400',backgroundImage: 'linear-gradient(180deg, #6cf15c, #62ce55)', fontSize: '14px', color: 'dimgrey'  }}>
                <div className="container">
                   <div style={{ textAlign: 'left', padding: '5px' }} className="row">
                      <div className="col-md-4">Select State</div>
@@ -203,10 +203,10 @@ class DistrictWiseData extends React.Component {
                <Sticky bottomOffset={80}>{({ style }) => <h1 style={style}>Sticky element</h1>}</Sticky>
             </StickyContainer> */}
             <div>
-               <Table style={{ marginTop: "82px" }} striped bordered responsive borderless>
+               <Table style={{ marginTop: "80px" }} striped bordered responsive borderless>
                   <tbody>
                      <tr style={{ fontWeight: "500" ,background: '#6f6df4', color:'white'}}>
-                        <td>Disticts</td>
+                        <td>Districts</td>
                         <td>Confirmed</td>
                         <td>Recovered</td>
                         <td>Deaths</td>
