@@ -77,7 +77,7 @@ class WorldData extends React.Component {
       axios.get('https://api.covid19api.com/summary').then(response => {
          console.log(response.data.Countries);
          var data = response.data.Countries.sort((a, b) => a.TotalConfirmed - b.TotalConfirmed);
-         console.log(data.reverse());
+         data = data.reverse();
          this.setState({
             data: data
          })

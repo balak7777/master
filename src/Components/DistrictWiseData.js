@@ -272,7 +272,7 @@ class DistrictWiseData extends React.Component {
             var resultantDistrictData = this.formStructureDistrict(districts);
             console.log(resultantDistrictData);
             var data = resultantDistrictData.sort((a, b) => a.confirmed - b.confirmed);
-            data.reverse();
+            data = data.reverse();
             this.setState({
                data: data
             })

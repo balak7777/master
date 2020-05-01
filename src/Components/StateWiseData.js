@@ -92,7 +92,7 @@ class StateWiseData extends React.Component {
             var resultantData = this.formStructure(response.data.state_wise);
             console.log(resultantData)
             var data = resultantData.sort((a, b) => a.confirmed - b.confirmed);
-            data.reverse();
+            data = data.reverse();
             this.setState({
                data: data
             })
