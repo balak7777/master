@@ -215,6 +215,18 @@ class DistrictWiseData extends React.Component {
                   </tbody>
                </Table>
             </div>
+            <footer className="neal-footer">
+        <Container>
+          <Row>
+            <Col >
+              <small className="neal-footer-copyright">
+                Disclaimer : This information is fetched from rapidapi.com
+              </small>
+            </Col>
+            
+          </Row>
+        </Container>
+      </footer>
 
          </div>
       )
