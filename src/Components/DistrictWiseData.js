@@ -182,7 +182,7 @@ class DistrictWiseData extends React.Component {
       return (
          <div>
 
-            <div style={{ position: 'fixed', width: '100%',  padding: '7px', marginTop: '-10px', fontWeight: '400',backgroundImage: 'linear-gradient(180deg, #6cf15c, #62ce55)', fontSize: '14px', color: 'dimgrey'  }}>
+            <div style={{ position: 'fixed', width: '100%', padding: '7px', marginTop: '-10px', fontWeight: '400', backgroundImage: 'linear-gradient(180deg, #6cf15c, #62ce55)', fontSize: '14px', color: 'dimgrey' }}>
                <div className="container">
                   <div style={{ textAlign: 'left', padding: '5px' }} className="row">
                      <div className="col-md-4">Select State</div>
@@ -205,7 +205,7 @@ class DistrictWiseData extends React.Component {
             <div>
                <Table style={{ marginTop: "80px" }} striped bordered responsive borderless>
                   <tbody>
-                     <tr style={{ fontWeight: "500" ,background: '#6f6df4', color:'white'}}>
+                     <tr style={{ fontWeight: "500", background: '#6f6df4', color: 'white' }}>
                         <td>Districts</td>
                         <td>Confirmed</td>
                         <td>Recovered</td>
@@ -216,17 +216,17 @@ class DistrictWiseData extends React.Component {
                </Table>
             </div>
             <footer className="neal-footer">
-        <Container>
-          <Row>
-            <Col >
-              <small className="neal-footer-copyright">
-                Disclaimer : This information is fetched from rapidapi.com
+               <Container>
+                  <Row>
+                     <Col >
+                        <small className="neal-footer-copyright">
+                           Disclaimer : This information is fetched from rapidapi.com
               </small>
-            </Col>
-            
-          </Row>
-        </Container>
-      </footer>
+                     </Col>
+
+                  </Row>
+               </Container>
+            </footer>
 
          </div>
       )
@@ -271,11 +271,11 @@ class DistrictWiseData extends React.Component {
             console.log(districts);
             var resultantDistrictData = this.formStructureDistrict(districts);
             console.log(resultantDistrictData);
+            var data = resultantDistrictData.sort((a, b) => a.confirmed - b.confirmed);
+            data.reverse();
             this.setState({
-               data: resultantDistrictData
+               data: data
             })
-
-
          })
          .catch((error) => {
             console.log(error)
