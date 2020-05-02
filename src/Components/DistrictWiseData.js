@@ -202,7 +202,7 @@ class DistrictWiseData extends React.Component {
             {/* <StickyContainer>
                <Sticky bottomOffset={80}>{({ style }) => <h1 style={style}>Sticky element</h1>}</Sticky>
             </StickyContainer> */}
-            <div>
+            <div style={{width: '100%'}}>
                <Table style={{ marginTop: "80px" }} striped bordered responsive borderless>
                   <tbody>
                      <tr style={{ fontWeight: "500", background: '#6f6df4', color: 'white' }}>

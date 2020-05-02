@@ -9,13 +9,13 @@ const NavBar = () => {
     return(
         <div id="header" style={{height:'-5px'}}className="App" sticky="top">
     <ReactBootStrap.Navbar collapseOnSelect expand="xl"  variant="dark" fixed="top" position="relative" style={{  'fontWeight': 'bold','fontFamily': 'auto', backgroundImage: 'linear-gradient(180deg, #FFC107, #e2b93e)'}}>
-  <ReactBootStrap.Navbar.Brand href="#home">World Corona Graph</ReactBootStrap.Navbar.Brand>
+  <ReactBootStrap.Navbar.Brand href="#home">World Corona View</ReactBootStrap.Navbar.Brand>
   <ReactBootStrap.Navbar.Toggle style={{border:'1px solid white'}} aria-controls="responsive-navbar-nav" />
   <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
     <ReactBootStrap.Nav className="mr-auto"> 
     
     <Link to="/mygraphcomponent">
-    <ReactBootStrap.Nav.Link href="#mygraphcomponent">World Graph</ReactBootStrap.Nav.Link>
+    <ReactBootStrap.Nav.Link href="#mygraphcomponent">World View</ReactBootStrap.Nav.Link>
     </Link>
     <Link to="/worlddata">
     <ReactBootStrap.Nav.Link href="#worlddata">World Cases</ReactBootStrap.Nav.Link>
