@@ -15,6 +15,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import MapMyIndia from './Components/MayMyIndia';
 
 
 
@@ -43,8 +44,11 @@ function App() {
           <Route path="/districtwisedata" component={DistrictWiseData}>
             <DistrictWiseData />
           </Route>
-          <Route path="/" component={MyGraphComponent}>
-            <MyGraphComponent />
+          <Route path="/mapmyindia" component={MapMyIndia}>
+            <MapMyIndia />
+          </Route>
+          <Route path="/" component={StateWiseData}>
+            <StateWiseData />
           </Route>
         </Switch>
       </Router>
