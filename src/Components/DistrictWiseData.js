@@ -1,12 +1,9 @@
-import FusionCharts from "fusioncharts";
-import charts from "fusioncharts/fusioncharts.charts";
-import ReactFusioncharts from "react-fusioncharts";
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import axios from 'axios';
 import Select from 'react-select';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Navbar, Nav, NavItem, NavDropdown, MenuItem, Table, Row, Col, Container } from 'react-bootstrap';
-import { StickyContainer, Sticky } from 'react-sticky';
+import { Table, Row, Col, Container } from 'react-bootstrap';
+
 
 const states = [
    {
@@ -176,9 +173,7 @@ class DistrictWiseData extends React.Component {
    }
 
    render() {
-      const tableHeadStyle = {
-         background: '#b2db70 !important'
-      };
+      
       return (
          <div>
 
@@ -294,13 +289,13 @@ class DistrictWiseData extends React.Component {
       }
       return array;
    }
-   formStructure(data) {
-      var myData = Object.keys(data).map(key => {
-         console.log(key);
-         return data[key];
-      })
-      return myData;
-   }
+   // formStructure(data) {
+   //    var myData = Object.keys(data).map(key => {
+   //       console.log(key);
+   //       return data[key];
+   //    })
+   //    return myData;
+   // }
 
    getDistricts(resultantData, state) {
       var resp = [];

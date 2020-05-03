@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import * as ReactBootStrap from "react-bootstrap";
+//import * as ReactBootStrap from "react-bootstrap";
 
-import MyGraphComponent from "./Components/MyGraphComponent";
+//import MyGraphComponent from "./Components/MyGraphComponent";
 import WorldData from "./Components/WorldData";
 
 import NavBar from "./Components/Navbar";
@@ -12,8 +12,7 @@ import DistrictWiseData from './Components/DistrictWiseData';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import MapMyIndia from './Components/MayMyIndia';
 

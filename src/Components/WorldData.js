@@ -1,11 +1,9 @@
-import FusionCharts from "fusioncharts";
-import charts from "fusioncharts/fusioncharts.charts";
-import ReactFusioncharts from "react-fusioncharts";
-import React, { useState, useEffect } from 'react';
+
+
+import React from 'react';
 import axios from 'axios';
-import Select from 'react-select';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Navbar, Nav, NavItem, NavDropdown, MenuItem, Table, Row, Col, Container } from 'react-bootstrap';
+import {Table, Row, Col, Container } from 'react-bootstrap';
 
 
 class WorldData extends React.Component {
@@ -24,9 +22,7 @@ class WorldData extends React.Component {
    }
 
    render() {
-      const tableHeadStyle = {
-         background: '#b2db70 !important'
-      };
+      
       return (
          <div style={{ marginTop: '-5px' }}>
 
