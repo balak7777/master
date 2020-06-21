@@ -301,7 +301,7 @@ class DistrictWiseData extends React.Component {
    getDistricts(resultantData, state) {
       var resp = [];
       for (var i = 0; i < resultantData.length; i++) {
-         if (resultantData[i].statecode == state) {
+         if (resultantData[i].statecode === state) {
             resp = resultantData[i].district;
             break;
          }

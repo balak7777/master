@@ -17,7 +17,7 @@ class MapMyIndia extends React.Component {
       
       return (
          
-         <iframe id="iframe" src="https://maps.mapmyindia.com/corona" onLoad={this.afterLoad} style={{width:"100%",height:"666px",float:"right"}}></iframe>
+         <iframe id="iframe" title="myFrame" src="https://maps.mapmyindia.com/corona" onLoad={this.afterLoad} style={{width:"100%",height:"666px",float:"right"}}></iframe>
          
       );
       
