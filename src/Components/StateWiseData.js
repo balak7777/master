@@ -58,7 +58,7 @@ class StateWiseData extends React.Component {
 
    renderTableData() {
       return this.state.data.map((data, index) => {
-         const { state, confirmed, recovered, deaths, deltaconfirmed, deltarecovered, deltadeaths } = data //destructuring
+         const { state, confirmed, recovered, deltaconfirmed, deltarecovered } = data //destructuring
          return (
             <tr key={state}>
                <td style={{ fontSize: "12px" }}>{state}</td>

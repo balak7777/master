@@ -236,7 +236,7 @@ class DistrictWiseData extends React.Component {
    renderTableData() {
       return this.state.data.map((data, index) => {
 
-         const { district, confirmed, recovered, deceased, delta } = data //destructuring
+         const { district, confirmed, recovered, delta } = data //destructuring
          return (
             <tr key={district}>
                <td style={{ fontSize: "12px" }}>{district}</td>

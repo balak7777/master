@@ -26,9 +26,9 @@ const NavBar = () => {
     <Link to="/districtwisedata">
     <ReactBootStrap.Nav.Link href="#districtwisedata">District Wise Live</ReactBootStrap.Nav.Link>
     </Link>
-    <Link to="/mapmyindia">
+    {/* <Link to="/mapmyindia">
     <ReactBootStrap.Nav.Link href="#mapmyindia">Info from Map My India</ReactBootStrap.Nav.Link>
-    </Link>
+    </Link> */}
       {/* <ReactBootStrap.NavDropdown title="YEET" id="collasible-nav-dropdown">
         <ReactBootStrap.NavDropdown.Item href="#action/3.1">Action</ReactBootStrap.NavDropdown.Item>
         <ReactBootStrap.NavDropdown.Item href="#action/3.2">Another action</ReactBootStrap.NavDropdown.Item>
