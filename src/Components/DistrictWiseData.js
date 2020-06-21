@@ -204,7 +204,7 @@ class DistrictWiseData extends React.Component {
                         <td>Districts</td>
                         <td>Confirmed</td>
                         <td>Recovered</td>
-                        <td>Deaths</td>
+                        {/* <td>Deaths</td> */}
                      </tr>
                      {this.renderTableData()}
                   </tbody>
@@ -242,7 +242,7 @@ class DistrictWiseData extends React.Component {
                <td style={{ fontSize: "12px" }}>{district}</td>
                <td style={{ fontSize: "12px" }}>{confirmed}({delta.confirmed})</td>
                <td style={{ fontSize: "12px" }}>{recovered}({delta.recovered})</td>
-               <td style={{ fontSize: "12px" }}>{deceased}({delta.deceased})</td>
+               {/* <td style={{ fontSize: "12px" }}>{deceased}({delta.deceased})</td> */}
             </tr>
          )
       })
