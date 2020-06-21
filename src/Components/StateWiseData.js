@@ -35,7 +35,7 @@ class StateWiseData extends React.Component {
                      <td>States</td>
                      <td>Confirmed</td>
                      <td>Recovered</td>
-                     <td>Deaths</td>
+                     {/* <td>Deaths</td> */}
                   </tr>
                   {this.renderTableData()}
                </tbody>
@@ -56,15 +56,18 @@ class StateWiseData extends React.Component {
       )
    }
 
+   clickMe(item){
+      console.log(item);
+   }
    renderTableData() {
       return this.state.data.map((data, index) => {
          const { state, confirmed, recovered, deaths, deltaconfirmed, deltarecovered, deltadeaths } = data //destructuring
          return (
             <tr key={state}>
-               <td style={{ fontSize: "12px" }}>{state}</td>
+               <td style={{ fontSize: "12px" }}><a onClick={this.clickMe.bind(this,data.statecode)}>{state}</a></td>
                <td style={{ fontSize: "12px" }}>{confirmed}({deltaconfirmed})</td>
                <td style={{ fontSize: "12px" }}>{recovered}({deltarecovered})</td>
-               <td style={{ fontSize: "12px" }}>{deaths}({deltadeaths})</td>
+               {/* <td style={{ fontSize: "12px" }}>{deaths}({deltadeaths})</td> */}
 
             </tr>
          )

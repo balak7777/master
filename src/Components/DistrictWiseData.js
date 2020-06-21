@@ -157,6 +157,7 @@ const states = [
 ];
 class DistrictWiseData extends React.Component {
    constructor(props) {
+      console.log(props);
       super(props) //since we are extending class Table so we have to use super in order to override Component class constructor
       this.state = { //state is by default an object
          data: []
@@ -204,7 +205,7 @@ class DistrictWiseData extends React.Component {
                         <td>Districts</td>
                         <td>Confirmed</td>
                         <td>Recovered</td>
-                        <td>Deaths</td>
+                        {/* <td>Deaths</td> */}
                      </tr>
                      {this.renderTableData()}
                   </tbody>
@@ -242,7 +243,7 @@ class DistrictWiseData extends React.Component {
                <td style={{ fontSize: "12px" }}>{district}</td>
                <td style={{ fontSize: "12px" }}>{confirmed}({delta.confirmed})</td>
                <td style={{ fontSize: "12px" }}>{recovered}({delta.recovered})</td>
-               <td style={{ fontSize: "12px" }}>{deceased}({delta.deceased})</td>
+               {/* <td style={{ fontSize: "12px" }}>{deceased}({delta.deceased})</td> */}
             </tr>
          )
       })
