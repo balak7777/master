@@ -26,6 +26,12 @@ const NavBar = () => {
     <Link to="/districtwisedata">
     <ReactBootStrap.Nav.Link href="#districtwisedata">District Wise Live</ReactBootStrap.Nav.Link>
     </Link>
+    <Link to="/sdp">
+    <ReactBootStrap.Nav.Link href="#sdp">State wise Recover/Death %</ReactBootStrap.Nav.Link>
+    </Link>
+    <Link to="/ddp">
+    <ReactBootStrap.Nav.Link href="#ddp">District wise Recover/Death %</ReactBootStrap.Nav.Link>
+    </Link>
     <Link to="/mapmyindia">
     <ReactBootStrap.Nav.Link href="#mapmyindia">Info from Map My India</ReactBootStrap.Nav.Link>
     </Link>

@@ -9,12 +9,15 @@ import NavBar from "./Components/Navbar";
 import StateWiseData from './Components/StateWiseData';
 import DistrictWiseData from './Components/DistrictWiseData';
 
+
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
 import MapMyIndia from './Components/MayMyIndia';
+import StatewiseDeathPercentage from './Components/StatewiseDeathPercentage';
+import DistrictwisePercentage from './Components/DistrictwisePercentage';
 
 
 
@@ -42,6 +45,12 @@ function App() {
           </Route>
           <Route path="/districtwisedata" component={DistrictWiseData}>
             <DistrictWiseData />
+          </Route>
+          <Route path="/sdp" component={StatewiseDeathPercentage}>
+            <StatewiseDeathPercentage />
+          </Route>
+          <Route path="/ddp" component={DistrictwisePercentage}>
+            <DistrictwisePercentage />
           </Route>
           <Route path="/mapmyindia" component={MapMyIndia}>
             <MapMyIndia />
